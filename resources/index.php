@@ -254,15 +254,6 @@ include 'templates/header.php';
 
 
 	<tr>
-	<td class='searchRow'><label for='searchResourceID'><b><?php echo _("Record ID");?></b></label>
-	<br />
-	<?php echo Html::text_search_field_tag('resourceID', ''); ?>
-	<br />
-	<div id='div_searchID' style='<?php if (!$search['resourceID']) echo "display:none;"; ?>margin-left:123px;'><input type='button' value='<?php echo _("go!");?>' id='searchResourceIDButton' /></div>
-	</td>
-	</tr>
-
-	<tr>
 	<td class='searchRow'><label for='searchGeneralSubjectID'><b><?php echo _("General Subject");?></b></label>
 	<br />
 	<select name='search[generalSubjectID]' id='searchGeneralSubjectID' style='width:150px'>

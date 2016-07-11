@@ -1035,10 +1035,6 @@ class Resource extends DatabaseObject {
 		}
 
 		//get where statements together (and escape single quotes)
-		if ($search['resourceID']) {
-			$whereAdd[] = "R.resourceID = '" . $resource->db->escapeString($search['resourceID']) . "'";
-			$searchDisplay[] = "Resource ID: " . $search['resourceID'];
-		}
 		if ($search['resourceISBNOrISSN']) {
 			$resourceISBNOrISSN = $resource->db->escapeString(str_replace("-","",$search['resourceISBNOrISSN']));
 			$whereAdd[] = "REPLACE(I.isbnOrIssn,'-','') = '" . $resourceISBNOrISSN . "'";
