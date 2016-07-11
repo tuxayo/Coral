@@ -186,7 +186,7 @@ function setNumberOfRecords(recordsPerPageNumber){
   	$("#div_searchCreateDate").css({'display':'block'}); 
   });
   $("#searchCreateDateEnd").change(function () {
-  	$("#div_searchCreateDate").css({'display':'block'}); 
+  	                                            $("#div_searchCreateDate").css({'display':'block'}); 
   });  
   
   
