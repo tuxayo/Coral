@@ -1968,28 +1968,6 @@ class Resource extends DatabaseObject {
 
 
 
-	//returns current step location in the workflow for this resource
-	//used to display the group on the tabs
-	public function getCurrentStepGroup() {
-
-
-		$query = "SELECT groupName FROM ResourceStep RS, UserGroup UG
-					WHERE resourceID = '" . $this->resourceID . "'
-					ORDER BY stepID";
-
-		$result = $this->db->processQuery($query, 'assoc');
-
-		$objects = array();
-
-		//need to do this since it could be that there's only one request and this is how the dbservice returns result
-		if (isset($result['resourceStepID'])) {
-
-		}
-
-	}
-
-
-
 	//returns first steps (object) in the workflow for this resource
 	public function getFirstSteps() {
 
