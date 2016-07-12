@@ -109,11 +109,9 @@ class Resource extends DatabaseObject {
 				$object = new IsbnOrIssn(new NamedArguments(array('primaryKey' => $row['isbnOrIssnID'])));
 				array_push($objects, $object);
 			}
-
 		}
 
 		return $objects;
-
 	}
 
 	//returns array of parent resource objects
@@ -1324,34 +1322,29 @@ class Resource extends DatabaseObject {
 		$result = $this->db->processQuery($query, 'assoc');
 
 		$searchArray = array();
-		$resultArray = array();
 
 		//need to do this since it could be that there's only one result and this is how the dbservice returns result
-		if (isset($result['resourceID'])) {
-
-			foreach (array_keys($result) as $attributeName) {
-				$resultArray[$attributeName] = $result[$attributeName];
-			}
-
-			array_push($searchArray, $resultArray);
-		}else{
-			foreach ($result as $row) {
-				$resultArray = array();
-				foreach (array_keys($row) as $attributeName) {
-					$resultArray[$attributeName] = $row[$attributeName];
-				}
-				array_push($searchArray, $resultArray);
-			}
+		if (isset($result['resourceID'])) { $result = [$result]; }
+		foreach ($result as $row) {
+			$row = static::addIdsToResourcesRow($row);
+			array_push($searchArray, $row);
 		}
-
 		return $searchArray;
+	}
+
+	private static function addIdsToResourcesRow($row) {
+		$resource = new Resource(new NamedArguments(array('primaryKey' => $row['resourceID'])));
+		$isbnOrIssns = $resource->getIsbnOrIssn();
+		$row['isbnOrIssns'] = [];
+        foreach ($isbnOrIssns as $isbnOrIssn) {
+			array_push($row['isbnOrIssns'], $isbnOrIssn->isbnOrIssn);
+        }
+		return $row;
 	}
 
 	public function searchCount($whereAdd) {
 		$query = $this->searchQuery($whereAdd, '', '', true);
 		$result = $this->db->processQuery($query, 'assoc');
-
-	//echo $query;
 
 		return $result['count'];
 	}
