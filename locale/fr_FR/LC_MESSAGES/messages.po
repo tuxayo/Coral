@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-05-11 14:32-0600\n"
-"PO-Revision-Date: 2016-07-13 15:20+0200\n"
+"POT-Creation-Date: 2016-07-15 09:29+0200\n"
+"PO-Revision-Date: 2016-07-15 09:29+0200\n"
 "Last-Translator: Victor Grousset/tuxayo <victor@tuxayo.net>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -15,42 +15,266 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: index.php:49
-msgid "eRM"
-msgstr "eRM"
+#: auth/js/admin.js:67
+msgid "Passwords do not match"
+msgstr "Les mots de passe ne correspondent pas"
 
-#: index.php:49
-msgid "eResource Management"
-msgstr "Gestion des ressources électroniques"
+#: auth/js/admin.js:73
+msgid "Password is required"
+msgstr "Le mot de passe est obligatoire"
 
-#: index.php:51
+#: auth/js/admin.js:78
+msgid "UserID is required"
+msgstr "Le nom d'utilisateur est obligatoire"
+
+#: auth/js/admin.js:89
+msgid "Do you really want to delete this user?"
+msgstr "Voulez-vous vraiment supprimer cet utilisateur ?"
+
+#: auth/js/index.js:40
+msgid "Refreshing Contents..."
+msgstr "Actualisation des contenus en cours..."
+
+#: auth/admin.php:66 auth/index.php:195
+msgid ""
+"JavaScript must be enabled in order for you to use CORAL. However, it seems "
+"JavaScript is either disabled or not supported by your browser. To use "
+"CORAL, enable JavaScript by changing your browser options, then"
+msgstr ""
+"JavaScript doit être activé pour utiliser CORAL. Cependant, il semble que "
+"JavaScript soit désactivé ou n'est pas supporté par votre navigateur web. "
+"Pour utiliser CORAL, activez JavaScript en modifiant les options de votre "
+"navigateur, puis"
+
+#: auth/admin.php:66 auth/index.php:195
+msgid "try again"
+msgstr "réessayez"
+
+#: auth/admin.php:75 auth/index.php:205
+msgid "eRM Authentication"
+msgstr "Authentification eRM"
+
+#: auth/admin.php:82
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: auth/admin.php:83
+msgid "Login ID must match the login ID set up in the modules"
+msgstr ""
+"Le nom d'utilisateur doit être identique au nom d'utilisateur paramétré dans "
+"les modules"
+
+#: auth/admin.php:89
+msgid "Processing..."
+msgstr "Traitement en cours..."
+
+#: auth/admin.php:93 auth/index.php:226 index.php:69
 msgid "Change language:"
 msgstr "Modifier la langue :"
 
-#: index.php:67
+#: auth/admin.php:109 auth/index.php:242 index.php:85
 msgid "Invalid translation route!"
 msgstr "Chemin d'accès aux traductions invalide !"
 
-#: index.php:101 index.php:106
+#: auth/admin.php:134
+msgid "Login page"
+msgstr "Page de connexion"
+
+#: auth/admin/classes/common/DBService.php:39
+msgid "There was a problem with the database: "
+msgstr "Il y a eu un problème avec la base de données : "
+
+#: auth/admin/classes/common/LdapPerson.php:34
+msgid "Could not connect to "
+msgstr "Impossible de se connecter à "
+
+#: auth/admin/classes/common/Object.php:63
+msgid "Cannot set value for undefined key ("
+msgstr "Impossible d'attribuer une valeur à une clé indéfinie ("
+
+#: auth/admin/classes/common/Object.php:72
+msgid "Cannot get value for undefined key ("
+msgstr "Impossible d'obtenir la valeur d'une clé indéfinie ("
+
+#: auth/admin/classes/domain/User.php:82 auth/admin/classes/domain/User.php:89
+msgid "Could not connect to LDAP server."
+msgstr "Impossible de se connecter au serveur LDAP."
+
+#: auth/admin/classes/domain/User.php:97
+msgid ""
+"There is a problem with the LDAP configuration, contact your server "
+"administrator."
+msgstr ""
+"Il y a un problème avec la configuration LDAP, contactez votre "
+"administrateur de serveur."
+
+#: auth/ajax_forms.php:43
+msgid "Edit User"
+msgstr "Modifier un utilisateur"
+
+#: auth/ajax_forms.php:43
+msgid "Add New User"
+msgstr "Ajouter un nouvel utilisateur"
+
+#: auth/ajax_forms.php:56
+msgid "Login ID"
+msgstr "Nom d'utilisateur"
+
+#: auth/ajax_forms.php:58
+msgid "Enter password for changes only"
+msgstr "Entrez un mot de passe uniquement pour les modifications"
+
+#: auth/ajax_forms.php:59
+msgid "New "
+msgstr "Nouveau "
+
+#: auth/ajax_forms.php:59
+msgid "Password"
+msgstr "Mot de passe"
+
+#: auth/ajax_forms.php:62
+msgid "Reenter Password"
+msgstr "Re-tapez le mot de passe"
+
+#: auth/ajax_forms.php:65
+msgid "Admin?"
+msgstr "Admin ?"
+
+#: auth/ajax_forms.php:77
+msgid "submit"
+msgstr "Envoyer"
+
+#: auth/ajax_forms.php:78
+msgid "cancel"
+msgstr "Annuler"
+
+#: auth/ajax_forms.php:114 auth/ajax_htmldata.php:75
+#: auth/ajax_processing.php:89
+msgid "Action "
+msgstr "Action "
+
+#: auth/ajax_forms.php:114 auth/ajax_htmldata.php:75
+#: auth/ajax_processing.php:89
+msgid " not set up!"
+msgstr " non-défini !"
+
+#: auth/ajax_htmldata.php:53
+msgid "edit password or admin status"
+msgstr "modifier le mot de passe ou le statut administrateur"
+
+#: auth/ajax_htmldata.php:54
+msgid "remove"
+msgstr "Retirer"
+
+#: auth/ajax_htmldata.php:60 auth/ajax_htmldata.php:64
+msgid "add new user"
+msgstr "Ajouter un nouvel utilisateur"
+
+#: auth/ajax_processing.php:77
+msgid "User successfully deleted."
+msgstr "Utilisateur supprimé avec succès."
+
+#: auth/index.php:55
+msgid "You are successfully logged out of the system."
+msgstr "Vous êtes à présent déconnecté du système."
+
+#: auth/index.php:86
+msgid "Invalid login ID.  Please try again."
+msgstr "Nom d'utilisateur invalide. Veuillez réessayer à nouveau."
+
+#: auth/index.php:91
+msgid "Invalid password.  Please try again."
+msgstr "Mot de passe invalide. Veuillez réessayer à nouveau."
+
+#: auth/index.php:108
+msgid "You are already logged in as "
+msgstr "Vous êtes déjà connecté en tant que "
+
+#: auth/index.php:108
+msgid "You may log in as another user below,"
+msgstr "Vous pouvez vous connecter sous un autre compte ci-dessous,"
+
+#: auth/index.php:108
+msgid "return"
+msgstr "Retourner"
+
+#: auth/index.php:108
+msgid "or"
+msgstr "ou"
+
+#: auth/index.php:108
+msgid "logout"
+msgstr "Déconnectez-vous"
+
+#: auth/index.php:129
+msgid "Please enter login credentials to sign in."
+msgstr "Merci d'entrer vos identifiants de connexion pour ouvrir une session."
+
+#: auth/index.php:137
+msgid "Your session has timed out."
+msgstr "Votre session a expiré."
+
+#: auth/index.php:146
+msgid "You do not have permission to enter."
+msgstr "Vous n'avez pas les autorisations requises pour accéder au site."
+
+#: auth/index.php:146
+msgid "Please contact an administrator."
+msgstr "Merci de contacter un administrateur."
+
+#: auth/index.php:156
+msgid "You must log in before accessing the admin page."
+msgstr ""
+"Vous devez vous identifier avant d'accéder à cette page d'administration."
+
+#: auth/index.php:211
+msgid "Login ID:"
+msgstr "Nom d'utilisateur :"
+
+#: auth/index.php:214
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: auth/index.php:218
+msgid "Remember my login ID"
+msgstr "Mémoriser mes identifiants de connexion"
+
+#: auth/index.php:221
+msgid "Login"
+msgstr "Se connecter"
+
+#: auth/index.php:267
+msgid "Admin page"
+msgstr "Page d'administration"
+
+#: index.php:67
+msgid "eRM"
+msgstr "eRM"
+
+#: index.php:67
+msgid "eResource Management"
+msgstr "Gestion des ressources électroniques"
+
+#: index.php:119 index.php:124
 msgid "Resources"
 msgstr "Ressources"
 
-#: index.php:116 index.php:121
+#: index.php:134 index.php:139
 msgid "Licensing"
 msgstr "Licences"
 
-#: index.php:130 index.php:135
+#: index.php:148 index.php:153
 msgid "Organizations"
 msgstr "Organisations"
 
-#: index.php:144 index.php:149
+#: index.php:162 index.php:167
 msgid "Usage Statistics"
 msgstr "Statistiques d'utilisation"
 
-#: index.php:158 index.php:163
+#: index.php:176 index.php:181
 msgid "Management"
 msgstr "Gestion"
 
-#: index.php:170
+#: index.php:188
 msgid "Powered by"
 msgstr "Alimenté par"
