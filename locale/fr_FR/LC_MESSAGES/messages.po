@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-07-15 09:29+0200\n"
-"PO-Revision-Date: 2016-07-15 09:29+0200\n"
+"PO-Revision-Date: 2016-07-18 10:01+0200\n"
 "Last-Translator: Victor Grousset/tuxayo <victor@tuxayo.net>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -33,22 +33,22 @@ msgstr "Voulez-vous vraiment supprimer cet utilisateur ?"
 
 #: auth/js/index.js:40
 msgid "Refreshing Contents..."
-msgstr "Actualisation des contenus en cours..."
+msgstr "Actualisation des contenus..."
 
 #: auth/admin.php:66 auth/index.php:195
 msgid ""
 "JavaScript must be enabled in order for you to use CORAL. However, it seems "
 "JavaScript is either disabled or not supported by your browser. To use "
-"CORAL, enable JavaScript by changing your browser options, then"
+"CORAL, enable JavaScript by changing your browser options, then "
 msgstr ""
 "JavaScript doit être activé pour utiliser CORAL. Cependant, il semble que "
 "JavaScript soit désactivé ou n'est pas supporté par votre navigateur web. "
 "Pour utiliser CORAL, activez JavaScript en modifiant les options de votre "
-"navigateur, puis"
+"navigateur, puis "
 
 #: auth/admin.php:66 auth/index.php:195
 msgid "try again"
-msgstr "réessayez"
+msgstr "réessayez à nouveau"
 
 #: auth/admin.php:75 auth/index.php:205
 msgid "eRM Authentication"
@@ -142,7 +142,7 @@ msgstr "Admin ?"
 
 #: auth/ajax_forms.php:77
 msgid "submit"
-msgstr "Envoyer"
+msgstr "envoyer"
 
 #: auth/ajax_forms.php:78
 msgid "cancel"
@@ -156,7 +156,7 @@ msgstr "Action "
 #: auth/ajax_forms.php:114 auth/ajax_htmldata.php:75
 #: auth/ajax_processing.php:89
 msgid " not set up!"
-msgstr " non-défini !"
+msgstr " non définie !"
 
 #: auth/ajax_htmldata.php:53
 msgid "edit password or admin status"
@@ -164,11 +164,11 @@ msgstr "modifier le mot de passe ou le statut administrateur"
 
 #: auth/ajax_htmldata.php:54
 msgid "remove"
-msgstr "Retirer"
+msgstr "retirer"
 
 #: auth/ajax_htmldata.php:60 auth/ajax_htmldata.php:64
 msgid "add new user"
-msgstr "Ajouter un nouvel utilisateur"
+msgstr "ajouter un nouvel utilisateur"
 
 #: auth/ajax_processing.php:77
 msgid "User successfully deleted."
@@ -204,7 +204,7 @@ msgstr "ou"
 
 #: auth/index.php:108
 msgid "logout"
-msgstr "Déconnectez-vous"
+msgstr "se déconnecter"
 
 #: auth/index.php:129
 msgid "Please enter login credentials to sign in."
@@ -241,7 +241,7 @@ msgstr "Mémoriser mes identifiants de connexion"
 
 #: auth/index.php:221
 msgid "Login"
-msgstr "Se connecter"
+msgstr "Connexion"
 
 #: auth/index.php:267
 msgid "Admin page"

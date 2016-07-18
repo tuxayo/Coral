@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-06-27 07:03-0600\n"
-"PO-Revision-Date: 2016-07-01 09:57-0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2016-07-18 09:55+0200\n"
+"Last-Translator: Victor Grousset/tuxayo <victor@tuxayo.net>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -54,7 +54,7 @@ msgstr "Ajouter"
 #: js/forms/attachmentForm.js:41 js/forms/attachmentForm.js:54
 #: js/forms/documentForm.js:102 js/forms/licenseForm.js:358
 msgid "File name is already being used..."
-msgstr "Ce nom de fichier est déjà utilisé."
+msgstr "Ce nom de fichier est déjà utilisé..."
 
 #: js/forms/attachmentForm.js:46
 msgid "The attachments directory is not writable."
@@ -71,7 +71,7 @@ msgstr " téléchargé avec succès."
 #: ajax_htmldata.php:1329 ajax_htmldata.php:1383 ajax_htmldata.php:1424
 #: ajax_htmldata.php:1467
 msgid "remove"
-msgstr "Supprimer"
+msgstr "retirer"
 
 #: js/forms/attachmentForm.js:101 js/forms/attachmentForm.js:109
 msgid "Do you really want to delete this attachment?"
@@ -86,8 +86,8 @@ msgid ""
 "File name may not contain special characters - ampersand, single quote, "
 "double quote or less than/greater than characters"
 msgstr ""
-"Le nom du fichier ne peut contenir de caractères spéciaux (\"et\" "
-"commercial, apostrophe, guillemets ou de signes plus grand que/moins que)."
+"Le nom du fichier ne peut contenir de caractères spéciaux (\"et\" commercial "
+"&, apostrophe, guillemet, ou de signe plus grand que/moins que)."
 
 #: js/forms/documentForm.js:110 js/forms/licenseForm.js:366
 msgid "The documents directory is not writable."
@@ -127,7 +127,7 @@ msgstr "Cette Catégorie est déjà en cours d'utilisation."
 
 #: js/forms/licenseForm.js:295 js/forms/noteForm.js:62
 msgid "Note Type has been added"
-msgstr "Type de note a été ajouté"
+msgstr "Type de remarque a été ajouté"
 
 #: js/forms/licenseForm.js:298 js/forms/noteForm.js:65
 msgid "That Note Type is already in use."
@@ -155,7 +155,7 @@ msgstr "Un fichier est obligatoire"
 
 #: js/forms/sfxForm.js:59
 msgid "A document must be selected to continue."
-msgstr "Sélectionnez un document pour continuer."
+msgstr "Un document doit être sélectionné pour continuer."
 
 #: js/forms/sfxForm.js:60
 msgid "Terms Tool Resource must be entered to continue."
@@ -402,7 +402,7 @@ msgstr "Utilisateurs"
 
 #: admin.php:36
 msgid "add new user"
-msgstr "Ajouter un nouvel utilisateur"
+msgstr "ajouter un nouvel utilisateur"
 
 #: admin.php:39 admin.php:53 admin.php:67 admin.php:155 in_progress.php:38
 #: license.php:68 license.php:93 license.php:112 license.php:131
@@ -419,7 +419,7 @@ msgstr "Ajouter un type de document"
 
 #: admin.php:63
 msgid "Note Types"
-msgstr "Types de notes"
+msgstr "Types de remarques"
 
 #: admin.php:64
 msgid "add new note type"
@@ -435,15 +435,15 @@ msgstr "Ajouter une nouvelle catégorie"
 
 #: admin.php:182
 msgid "You don't have permission to access this page"
-msgstr "Vous n'avez pas les autorisations requises pour accéder à cette page"
+msgstr "Vous n'avez pas l'autorisation d’accéder à cette page"
 
 #: admin/classes/common/DBService.php:40
 msgid "There was a problem with the database: "
-msgstr "Problème avec la base de données : "
+msgstr "Il y a eu un problème avec la base de données : "
 
 #: admin/classes/common/Object.php:63 admin/classes/common/Object.php:72
 msgid "Cannot set value for undefined key ("
-msgstr "Impossible d'assigner une valeur pour la clé indéfinie ("
+msgstr "Impossible d'attribuer une valeur à une clé indéfinie ("
 
 #: ajax_forms.php:59
 msgid "Edit "
@@ -489,7 +489,7 @@ msgid ""
 msgstr ""
 "Il y a eu un problème lors du traitement de cette demande, merci de vérifier "
 "que la configuration des organisations est correcte dans le fichier "
-"configuration.ini et que les tableaux et la base de données ont été créés."
+"configuration.ini et que les table et la base de données ont été créés."
 
 #: ajax_forms.php:174
 msgid "add category"
@@ -522,7 +522,7 @@ msgstr "Ajouter un type de remarque"
 #: ajax_forms.php:251 ajax_forms.php:424 ajax_forms.php:522 ajax_forms.php:792
 #: ajax_forms.php:981 ajax_forms.php:1063
 msgid "submit"
-msgstr "Valider"
+msgstr "envoyer"
 
 #: ajax_forms.php:252 ajax_forms.php:425 ajax_forms.php:523 ajax_forms.php:793
 #: ajax_forms.php:982 ajax_forms.php:1064 ajax_forms.php:1199
@@ -677,7 +677,7 @@ msgstr "Utilisateur"
 
 #: ajax_forms.php:1147 ajax_htmldata.php:1356
 msgid "Login ID"
-msgstr "Identifiant de connexion"
+msgstr "Nom d'utilisateur"
 
 #: ajax_forms.php:1148 ajax_htmldata.php:1357
 msgid "First Name"
@@ -695,7 +695,7 @@ msgstr "Privilège"
 msgid "Add/Edit users can add, edit, or remove licenses and associated fields"
 msgstr ""
 "Les utilisateurs 'Add/Edit' peuvent ajouter, modifier ou supprimer les "
-"licences et les champs associés."
+"licences et les champs associés"
 
 #: ajax_forms.php:1153 ajax_forms.php:1156
 msgid "Admin users have access to the Admin page and the SFX tab."
@@ -707,7 +707,7 @@ msgid ""
 "View only users can view all license information, including the license pdf"
 msgstr ""
 "Les utilisateurs 'View only' peuvent consulter tous les détails des "
-"licences, y compris le fichier PDF de la licence."
+"licences, y compris le fichier PDF de la licence"
 
 #: ajax_forms.php:1185
 msgid "Terms Tool Email"
@@ -766,7 +766,7 @@ msgstr "Action "
 
 #: ajax_forms.php:1324 ajax_htmldata.php:1570 ajax_processing.php:1330
 msgid " not set up!"
-msgstr " Non défini !"
+msgstr " non définie !"
 
 #: ajax_htmldata.php:59 ajax_htmldata.php:72
 msgid "Description: "
@@ -778,11 +778,11 @@ msgstr "Date de création : "
 
 #: ajax_htmldata.php:86
 msgid "Last Update: "
-msgstr "Dernière mise à jour :"
+msgstr "Dernière mise à jour : "
 
 #: ajax_htmldata.php:93
 msgid "License Status:"
-msgstr "Statut de licence :"
+msgstr "Statut de la licence :"
 
 #: ajax_htmldata.php:146
 msgid "For Document"
@@ -844,11 +844,11 @@ msgstr "Affichage de "
 
 #: ajax_htmldata.php:425
 msgid " to "
-msgstr " sur "
+msgstr " à "
 
 #: ajax_htmldata.php:425
 msgid " of "
-msgstr " de "
+msgstr " sur "
 
 #: ajax_htmldata.php:425
 msgid " Records"
@@ -869,7 +869,7 @@ msgstr "Dernière date de révision du document"
 
 #: ajax_htmldata.php:527
 msgid "records per page"
-msgstr "résultats par page"
+msgstr "fiches par page"
 
 #: ajax_htmldata.php:559
 msgid "Publisher / Provider"
@@ -946,7 +946,7 @@ msgstr "Masquer les archives"
 
 #: ajax_htmldata.php:914 ajax_htmldata.php:1034
 msgid "archived on: "
-msgstr "Archivé le : "
+msgstr "archivé le : "
 
 #: ajax_htmldata.php:971 ajax_htmldata.php:1088
 msgid "view expressions"
@@ -1000,7 +1000,7 @@ msgstr "(aucune date)"
 
 #: ajax_htmldata.php:1066
 msgid "add/view details"
-msgstr "Ajouter/voir les détails"
+msgstr "ajouter/voir les détails"
 
 #: ajax_htmldata.php:1073
 msgid "add signatures"
@@ -1036,7 +1036,7 @@ msgstr "(aucun)"
 
 #: ajax_htmldata.php:1284
 msgid "add/view "
-msgstr "Ajouter/voir "
+msgstr "ajouter/voir "
 
 #: ajax_htmldata.php:1308
 msgid "add new expression"
@@ -1056,7 +1056,7 @@ msgstr "Licence supprimée avec succès."
 
 #: ajax_processing.php:177
 msgid "success uploading!"
-msgstr "Téléchargement réussi !"
+msgstr "téléchargement réussi !"
 
 #: ajax_processing.php:180 ajax_processing.php:1078
 msgid "There was a problem saving your file to "
@@ -1115,7 +1115,7 @@ msgstr "Note supprimée avec succès."
 
 #: ajax_processing.php:457
 msgid "Terms Tool Resource Link successfully deleted"
-msgstr "Lien de la ressource Outil des termes supprimé avec succès"
+msgstr "Le lien de la ressource Outil des termes a été supprimé avec succès"
 
 #: ajax_processing.php:472
 msgid "Document Updated Successfully."
@@ -1135,7 +1135,7 @@ msgstr " Merci de vous assurer que tout est rempli correctement."
 
 #: ajax_processing.php:911
 msgid "Unable to delete  - this "
-msgstr "Impossible de supprimer - ceci "
+msgstr "Impossible de supprimer - ce "
 
 #: ajax_processing.php:911
 msgid ""
@@ -1251,9 +1251,10 @@ msgid ""
 "JavaScript is either disabled or not supported by your browser. To use "
 "CORAL, enable JavaScript by changing your browser options, then "
 msgstr ""
-"JavaScript doit être activé pour utiliser CORAL. JavaScript semble désactivé "
-"ou n'est pas supporté par votre navigateur web. Pour utiliser CORAL, activez "
-"le JavaScript en modifiant les options de votre navigateur web, puis "
+"JavaScript doit être activé pour utiliser CORAL. Cependant, il semble que "
+"JavaScript soit désactivé ou n'est pas supporté par votre navigateur web. "
+"Pour utiliser CORAL, activez JavaScript en modifiant les options de votre "
+"navigateur, puis "
 
 #: templates/header.php:84
 msgid "try again"
@@ -1273,7 +1274,7 @@ msgstr "Bonjour"
 
 #: templates/header.php:121
 msgid "logout"
-msgstr "Se déconnecter"
+msgstr "se déconnecter"
 
 #: templates/header.php:121
 msgid "Help"

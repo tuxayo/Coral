@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-06-27 07:01-0600\n"
-"PO-Revision-Date: 2016-07-01 09:59-0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2016-07-18 10:03+0200\n"
+"Last-Translator: Victor Grousset/tuxayo <victor@tuxayo.net>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -159,7 +159,7 @@ msgstr "Utilisateurs"
 
 #: admin.php:13
 msgid "add new user"
-msgstr "Ajouter un nouvel utilisateur"
+msgstr "ajouter un nouvel utilisateur"
 
 #: admin.php:27
 msgid "Email addresses for logs"
@@ -175,7 +175,7 @@ msgstr "Paramètres des valeurs hors normes"
 
 #: admin/classes/common/DBService.php:39
 msgid "There was a problem with the database: "
-msgstr "Problème avec la base de données : "
+msgstr "Il y a eu un problème avec la base de données : "
 
 #: admin/classes/common/LdapPerson.php:34
 msgid "Could not connect to "
@@ -183,11 +183,11 @@ msgstr "Impossible de se connecter à "
 
 #: admin/classes/common/Object.php:63
 msgid "Cannot set value for undefined key ("
-msgstr "Impossible d'assigner une valeur pour la clé indéfinie ("
+msgstr "Impossible d'attribuer une valeur à une clé indéfinie ("
 
 #: admin/classes/common/Object.php:72
 msgid "Cannot get value for undefined key ("
-msgstr "Impossible d'obtenir la valeur de la clé indéfinie ("
+msgstr "Impossible d'obtenir la valeur d'une clé indéfinie ("
 
 #: admin/classes/domain/ImportLog.php:36
 msgid " (via sushi)"
@@ -294,7 +294,7 @@ msgstr "Mettre à jour le nom d'affichage du rapport"
 #: ajax_htmldata.php:1013 ajax_htmldata.php:1020 ajax_htmldata.php:1027
 #: ajax_htmldata.php:1418
 msgid "update"
-msgstr "Mettre à jour"
+msgstr "mettre à jour"
 
 #: ajax_forms.php:295 ajax_htmldata.php:377 ajax_htmldata.php:398
 msgid "Interface Notes"
@@ -327,7 +327,7 @@ msgstr "Notes de l'interface:"
 #: ajax_forms.php:324 ajax_forms.php:393 ajax_forms.php:460 ajax_forms.php:626
 #: ajax_forms.php:830 ajax_forms.php:884
 msgid "submit"
-msgstr "Valider"
+msgstr "envoyer"
 
 #: ajax_forms.php:373 ajax_htmldata.php:321
 msgid "Publisher Notes"
@@ -347,7 +347,7 @@ msgstr "Nom d'utilisateur:"
 
 #: ajax_forms.php:444 ajax_forms.php:549
 msgid "Password:"
-msgstr "Mot de passe:"
+msgstr "Mot de passe :"
 
 #: ajax_forms.php:447
 msgid "URL:"
@@ -526,7 +526,7 @@ msgstr "Titres et identifiants associés"
 
 #: ajax_forms.php:981
 msgid "Add New"
-msgstr "Ajouter un nouveau"
+msgstr "Ajouter"
 
 #: ajax_forms.php:988
 msgid " User"
@@ -534,7 +534,7 @@ msgstr " Utilisateur"
 
 #: ajax_forms.php:989 ajax_htmldata.php:1402
 msgid "Login ID"
-msgstr "Identifiant de connexion"
+msgstr "Nom d'utilisateur"
 
 #: ajax_forms.php:990 ajax_htmldata.php:1403
 msgid "First Name"
@@ -626,14 +626,14 @@ msgstr "Modifier"
 #: ajax_htmldata.php:128 ajax_htmldata.php:189 ajax_htmldata.php:351
 #: ajax_htmldata.php:420 ajax_htmldata.php:1419
 msgid "remove"
-msgstr "Supprimer"
+msgstr "retirer"
 
 #: ajax_htmldata.php:138 ajax_htmldata.php:199 ajax_htmldata.php:359
 #: ajax_htmldata.php:428 ajax_htmldata.php:478 ajax_htmldata.php:638
 #: ajax_htmldata.php:665 ajax_htmldata.php:699 ajax_htmldata.php:1428
 #: ajax_htmldata.php:1536
 msgid "(none found)"
-msgstr "(non-trouvé)"
+msgstr "(aucun trouvé)"
 
 #: ajax_htmldata.php:146 ajax_htmldata.php:207
 msgid "add new login"
@@ -653,7 +653,7 @@ msgstr "Pour "
 
 #: ajax_htmldata.php:237 ajax_htmldata.php:261
 msgid "view organization"
-msgstr "Voir l'organisation"
+msgstr "voir l'organisation"
 
 #: ajax_htmldata.php:240
 msgid "Login Type"
@@ -889,11 +889,11 @@ msgstr " à "
 
 #: ajax_htmldata.php:1112 ajax_htmldata.php:1472
 msgid " of "
-msgstr " de "
+msgstr " sur "
 
 #: ajax_htmldata.php:1112
 msgid " Records"
-msgstr " Résultats"
+msgstr " Fiches"
 
 #: ajax_htmldata.php:1228 ajax_htmldata.php:1280 ajax_htmldata.php:1337
 msgid "Platform/Publisher"
@@ -974,7 +974,7 @@ msgstr "Par"
 
 #: ajax_htmldata.php:1620
 msgid "records per page"
-msgstr "Résultats par page"
+msgstr "fiches par page"
 
 #: ajax_processing.php:395
 msgid "Override has been updated"
@@ -1018,7 +1018,7 @@ msgstr "Format incorrect du nom du fichier - renommez-le en nomdefichier.txt !"
 
 #: import.php:43
 msgid "File:"
-msgstr "Fichier:"
+msgstr "Fichier :"
 
 #: import.php:48
 msgid "Layout:"
@@ -1213,7 +1213,7 @@ msgstr "Juil-"
 
 #: spreadsheet.php:77 spreadsheet.php:95 spreadsheet.php:110
 msgid "Aug-"
-msgstr "Aôut-"
+msgstr "Aôu-"
 
 #: spreadsheet.php:78 spreadsheet.php:96 spreadsheet.php:111
 msgid "Sep-"
@@ -1325,9 +1325,10 @@ msgid ""
 "JavaScript is either disabled or not supported by your browser. To use "
 "CORAL, enable JavaScript by changing your browser options, then "
 msgstr ""
-"JavaScript doit être activé pour utiliser CORAL. JavaScript semble désactivé "
-"ou n'est pas supporté par votre navigateur web. Pour utiliser CORAL, activez "
-"le JavaScript en modifiant les options de votre navigateur web, puis "
+"JavaScript doit être activé pour utiliser CORAL. Cependant, il semble que "
+"JavaScript soit désactivé ou n'est pas supporté par votre navigateur web. "
+"Pour utiliser CORAL, activez JavaScript en modifiant les options de votre "
+"navigateur, puis "
 
 #: templates/header.php:72
 msgid "try again"
@@ -1343,7 +1344,7 @@ msgstr "Bonjour"
 
 #: templates/header.php:109
 msgid "logout"
-msgstr "Se Déconnecter"
+msgstr "se déconnecter"
 
 #: templates/header.php:109
 msgid "Help"
@@ -1363,7 +1364,7 @@ msgstr "SUSHI"
 
 #: templates/header.php:188
 msgid "Admin"
-msgstr "Admin"
+msgstr "Administration"
 
 #: templates/header.php:204 templates/header.php:246
 msgid "Usage Reports"
@@ -1387,7 +1388,7 @@ msgstr "Organisations"
 
 #: templates/header.php:283
 msgid "Licensing"
-msgstr "Licensing"
+msgstr "Licences"
 
 #: templates/header.php:288
 msgid "Management"
