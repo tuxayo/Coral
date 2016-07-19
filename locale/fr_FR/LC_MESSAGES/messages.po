@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
 "POT-Creation-Date: 2016-07-18 12:28+0200\n"
-"PO-Revision-Date: 2016-07-18 12:28+0200\n"
+"PO-Revision-Date: 2016-07-19 12:41+0200\n"
 "Last-Translator: Victor Grousset/tuxayo <victor@tuxayo.net>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -114,7 +114,7 @@ msgstr "Le dossier des pièces jointes n'a pas de droits d'écriture."
 #: resources/js/forms/attachmentForm.js:124
 #: resources/js/forms/attachmentForm.js:146
 msgid " successfully uploaded."
-msgstr " téléchargé avec succès."
+msgstr " téléversé avec succès."
 
 #: licensing/js/forms/attachmentForm.js:84
 #: management/js/forms/attachmentForm.js:84 auth/ajax_htmldata.php:54
@@ -303,7 +303,7 @@ msgstr "Ce nom de fichier est déjà utilisé."
 
 #: licensing/js/onix_import.js:99
 msgid "Please select a file to upload."
-msgstr "Veuillez sélectionner un fichier à télécharger."
+msgstr "Veuillez sélectionner un fichier à téléverser."
 
 #: licensing/js/onix_import.js:105
 msgid "At least one term type must be selected."
@@ -596,7 +596,7 @@ msgstr "Modifier"
 
 #: management/js/forms/licenseForm.js:327
 msgid "successfully uploaded"
-msgstr "téléchargé avec succès"
+msgstr "téléversé avec succès"
 
 #: management/js/forms/licenseForm.js:330
 msgid "File is required"
@@ -703,7 +703,7 @@ msgstr "Le type de pièce jointe doit être sélectionné avant de continuer."
 
 #: resources/js/forms/attachmentForm.js:178
 msgid "A file must be uploaded"
-msgstr "Un fichier doit être téléchargé"
+msgstr "Un fichier doit être téléversé"
 
 #: resources/js/forms/costForm.js:260
 msgid "Validation Failed"
@@ -1565,7 +1565,7 @@ msgstr "Ajouter un consortium"
 
 #: licensing/ajax_forms.php:164 management/ajax_forms.php:304
 msgid "Document Upload"
-msgstr "Télécharger un document"
+msgstr "Téléverser un document"
 
 #: licensing/ajax_forms.php:167
 msgid "Effective Date:"
@@ -2024,7 +2024,7 @@ msgstr "moins..."
 #: licensing/ajax_htmldata.php:983 management/ajax_htmldata.php:308
 #: management/ajax_htmldata.php:966 management/ajax_htmldata.php:1084
 msgid "(none uploaded)"
-msgstr "(aucun téléchargé)"
+msgstr "(aucun téléversé)"
 
 #: licensing/ajax_htmldata.php:228 management/ajax_htmldata.php:313
 msgid "view attachment "
@@ -2252,7 +2252,7 @@ msgstr "Afficher les archives"
 
 #: licensing/ajax_htmldata.php:1037 management/ajax_htmldata.php:1141
 msgid "upload new document"
-msgstr "Télécharger un nouveau document"
+msgstr "Téléverser un nouveau document"
 
 #: licensing/ajax_htmldata.php:1125 management/ajax_htmldata.php:1233
 msgid "used in terms tool"
@@ -2302,7 +2302,7 @@ msgstr "Licence supprimée avec succès."
 #: licensing/ajax_processing.php:172 licensing/ajax_processing.php:957
 #: management/ajax_processing.php:177
 msgid "success uploading!"
-msgstr "téléchargement réussi !"
+msgstr "téléversement réussi !"
 
 #: licensing/ajax_processing.php:175 licensing/ajax_processing.php:960
 msgid "There was a problem saving your file to"
@@ -2374,7 +2374,7 @@ msgstr "Licence ajoutée avec succès."
 #: licensing/ajax_processing.php:477
 msgid "Please continue to upload documents and add expressions or emails."
 msgstr ""
-"Merci de continuer à télécharger des documents et à ajouter des expressions "
+"Merci de continuer à téléverser des documents et à ajouter des expressions "
 "ou des adresses emails."
 
 #: licensing/ajax_processing.php:514 licensing/ajax_processing.php:527
@@ -2606,7 +2606,7 @@ msgstr "Importer ONIX-PL"
 #: licensing/onix_import.php:28 resources/import.php:38
 #: resources/importFunds.php:21
 msgid "The file has been successfully uploaded."
-msgstr "Le fichier a été téléchargé avec succès."
+msgstr "Le fichier a été téléversé avec succès."
 
 #: licensing/onix_import.php:51
 msgid "Unable to create file for license."
@@ -2626,7 +2626,7 @@ msgstr "Impossible de créer l'objet XML"
 
 #: licensing/onix_import.php:294 resources/import.php:63
 msgid "Unable to upload the file"
-msgstr "Impossible de télécharger le fichier"
+msgstr "Impossible de téléverser le fichier"
 
 #: licensing/onix_import.php:298 resources/import.php:67
 #: resources/importFunds.php:37
@@ -2667,7 +2667,7 @@ msgstr "Conditions générales"
 
 #: licensing/onix_import.php:334 resources/import.php:652 usage/import.php:58
 msgid "Upload"
-msgstr "Télécharger"
+msgstr "Téléverser"
 
 #: licensing/templates/header.php:35 management/templates/header.php:34
 msgid ""
@@ -2900,7 +2900,7 @@ msgstr "Un seul document actif est autorisé."
 
 #: management/ajax_htmldata.php:1143
 msgid "upload archived document"
-msgstr "Télécharger un document archivé"
+msgstr "Téléverser un document archivé"
 
 #: management/ajax_processing.php:180 management/ajax_processing.php:1078
 #: resources/ajax_processing/uploadAttachment.php:29
@@ -5279,7 +5279,7 @@ msgstr ""
 
 #: resources/import.php:58 resources/importFunds.php:34
 msgid "Unable to open the uploaded file"
-msgstr "Impossible d'ouvrir le fichier téléchargé"
+msgstr "Impossible d'ouvrir le fichier téléversé"
 
 #: resources/import.php:71
 msgid ""
@@ -6308,7 +6308,7 @@ msgid ""
 "There was an error uploading the file.  Please verify the size is not over "
 "5MB and try again!"
 msgstr ""
-"Erreur lors du téléchargement du fichier. Vérifiez que le fichier ne dépasse "
+"Erreur lors du téléversement du fichier. Vérifiez que le fichier ne dépasse "
 "pas 5 Mo et réessayez !"
 
 #: usage/import.php:31
@@ -6589,7 +6589,7 @@ msgstr " Titres"
 
 #: usage/uploadComplete.php:25
 msgid "Upload Process Complete"
-msgstr "Processus de téléchargement terminé"
+msgstr "Processus de téléversement terminé"
 
 #: usage/uploadComplete.php:90
 msgid "Process started on "
@@ -6781,7 +6781,7 @@ msgstr "Le fichier "
 
 #: usage/uploadConfirmation.php:115
 msgid " has been uploaded successfully."
-msgstr " a été téléchargé avec succès."
+msgstr " a été téléversé avec succès."
 
 #: usage/uploadConfirmation.php:115
 msgid "Please confirm the following data:"
@@ -6789,7 +6789,7 @@ msgstr "Veuillez confirmer les données suivantes :"
 
 #: usage/uploadConfirmation.php:135
 msgid "Upload Process Confirmation"
-msgstr "Confirmation du processus de téléchargement"
+msgstr "Confirmation du processus de téléversement"
 
 #: usage/uploadConfirmation.php:185 usage/uploadConfirmation.php:249
 msgid " for "
