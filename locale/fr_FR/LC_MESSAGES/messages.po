@@ -793,7 +793,7 @@ msgstr "Supprimer une ressource principale"
 
 #: resources/js/forms/resourceUpdateForm.js:309
 msgid "Error - Organization is not found.  Please use the Autocomplete."
-msgstr "Erreur - Organisation non-trouvée. Utilisez l’auto-complétion."
+msgstr "Erreur - Organisation non-trouvée. Utilisez l'auto-complétion."
 
 #: resources/js/forms/resourceUpdateForm.js:324
 msgid "remove this organization"
@@ -801,7 +801,7 @@ msgstr "Supprimer cette organisation"
 
 #: resources/js/forms/resourceUpdateForm.js:394
 msgid "Error - Organization is not found.  Please use Autocomplete."
-msgstr "Erreur - Organisation non-trouvée. Utilisez l’auto-complétion."
+msgstr "Erreur - Organisation non-trouvée. Utilisez l'auto-complétion."
 
 #: resources/js/forms/userGroupForm.js:101
 msgid "Error - User is required"
@@ -927,9 +927,9 @@ msgid ""
 "Do you really want to delete this step? If other steps depended on this one, "
 "they will be started upon deletion. This action cannot be undone"
 msgstr ""
-"Êtes-vous sûr de vouloir effacer cette étape? Si d’autres étapes dépendent "
-"de celle-ci, elles seront déclenchées après l’effacement. Cette action est "
-"impossible d’annuler."
+"Êtes-vous sûr de vouloir effacer cette étape? Si d'autres étapes dépendent "
+"de celle-ci, elles seront déclenchées après l'effacement. Cette action est "
+"impossible d'annuler."
 
 #: usage/js/admin.js:121 usage/js/reporting.js:61
 msgid "Error - Please enter a value."
@@ -1526,7 +1526,7 @@ msgstr "Ajouter un nouveau fournisseur"
 
 #: licensing/admin.php:180 management/admin.php:182
 msgid "You don't have permission to access this page"
-msgstr "Vous n'avez pas l'autorisation d’accéder à cette page"
+msgstr "Vous n'avez pas l'autorisation d'accéder à cette page"
 
 #: licensing/ajax_forms.php:47 licensing/ajax_htmldata.php:630
 #: management/ajax_htmldata.php:725 organizations/ajax_htmldata.php:836
@@ -3009,7 +3009,7 @@ msgstr "Ajouter un nouveau type d'incident"
 
 #: organizations/admin.php:118 resources/admin.php:121
 msgid "You do not have permissions to access this screen."
-msgstr "Vous n'avez pas l'autorisation d’accéder à cette page"
+msgstr "Vous n'avez pas l'autorisation d'accéder à cette page"
 
 #: organizations/ajax_forms.php:67
 msgid "Update Organization"
@@ -4145,13 +4145,13 @@ msgstr ""
 "votre fichier importé a une deuxième colonne nommée Nom qui correspond au "
 "Titre de la ressource, entrez 2 comme valeur dans le champ Titre de la "
 "ressource. Pour les colonnes comportant plusieurs valeurs délimitées par des "
-"caractères, indiquez le délimiteur en sélectionnant l’option Si délimité, "
+"caractères, indiquez le délimiteur en sélectionnant l'option Si délimité, "
 "Délimité par champ. Pour les champs ayant des valeurs dans plusieurs "
 "colonnes, ajoutez des ensembles de données supplémentaires en cliquant sur "
 "les liens +Ajouter. Utilisez la fonction Dédupliquer sur cette colonne pour "
 "les ensembles ISBN/ISSN pour ignorer les éventuelles valeurs dupliquées qui "
-"pourraient apparaître dans ces colonnes. Les Types d’alias, les Types de "
-"remarques et les Rôles d’organisation que vous pouvez attribuer à vos "
+"pourraient apparaître dans ces colonnes. Les Types d'alias, les Types de "
+"remarques et les Rôles d'organisation que vous pouvez attribuer à vos "
 "colonnes mappées peuvent être paramétrées dans la page Administration."
 
 #: resources/ajax_forms/getAdminUpdateForm.php:16
@@ -4432,7 +4432,7 @@ msgstr "Mappage du nom de l'organisation"
 
 #: resources/ajax_forms/getImportConfigForm.php:207
 msgid ""
-"Use these mappings to normalize different variations of an organization’s "
+"Use these mappings to normalize different variations of an organization's "
 "name to a single value. For example, you could have a publisher with three "
 "variations of their name across your import file: PublisherHouse, "
 "PublisherH, and PH. You could create a mapping for each one and normalize "
@@ -4441,11 +4441,11 @@ msgid ""
 "against the complete list of mappings that you create. "
 msgstr ""
 "Utilisez ces mappages pour normaliser les différentes variations du nom "
-"d’une organisation en une seule valeur. Par exemple, un éditeur pourrait "
+"d'une organisation en une seule valeur. Par exemple, un éditeur pourrait "
 "avoir trois variantes de nom dans votre fichier importé: EditionBleue, "
 "EditionB et EB. Vous pouvez créer un mappage pour chaque variation et les "
-"normaliser toutes à EditionBleue, pour éviter la création d’organisations "
-"dupliquées. Chaque colonne ajoutée à un ensemble d’Organisations ci-dessus "
+"normaliser toutes à EditionBleue, pour éviter la création d'organisations "
+"dupliquées. Chaque colonne ajoutée à un ensemble d'Organisations ci-dessus "
 "est comparée à la liste complète des mappages que vous avez créés."
 
 #: resources/ajax_forms/getImportConfigForm.php:207
@@ -4635,15 +4635,15 @@ msgstr "Site(s) d'achat(s)"
 
 #: resources/ajax_forms/getResourceStepForm.php:25
 msgid "Edit Resource Step"
-msgstr "Éditez l’étape de ressource"
+msgstr "Éditez l'étape de ressource"
 
 #: resources/ajax_forms/getResourceStepForm.php:32
 msgid "Reassign Resource Step"
-msgstr "Réaffectez l’étape de ressource"
+msgstr "Réaffectez l'étape de ressource"
 
 #: resources/ajax_forms/getResourceStepForm.php:40
 msgid "Step name: "
-msgstr "Nom de l’étape: "
+msgstr "Nom de l'étape: "
 
 #: resources/ajax_forms/getResourceStepForm.php:42
 msgid "Group: "
@@ -5296,19 +5296,19 @@ msgid ""
 "Organization Roles that you can assign to your mapped columns can be "
 "configured on the Admin page."
 msgstr ""
-"Si vous n’avez pas créé précédemment de Configuration d’importation, pour "
+"Si vous n'avez pas créé précédemment de Configuration d'importation, pour "
 "chaque champ de ressource veuillez entrer le numéro de la colonne de votre "
 "fichier CSV qui correspond au champ de la ressource. Par exemple, si votre "
 "fichier importé a une deuxième colonne nommée Nom qui correspond au Titre de "
 "la ressource, entrez 2 comme valeur dans le champ Titre de la ressource. "
 "Pour les colonnes comportant plusieurs valeurs délimitées par des "
-"caractères, indiquez le délimiteur en sélectionnant l’option Si délimité, "
+"caractères, indiquez le délimiteur en sélectionnant l'option Si délimité, "
 "Délimité par champ. Pour les champs ayant des valeurs dans plusieurs "
 "colonnes, ajoutez des ensembles de données supplémentaires en cliquant sur "
 "les liens +Ajouter. Utilisez la fonction Dédupliquer sur cette colonne pour "
 "les ensembles ISBN/ISSN pour ignorer les éventuelles valeurs dupliquées qui "
-"pourraient apparaître dans ces colonnes. Les Types d’alias, les Types de "
-"remarques et les Rôles d’organisation que vous pouvez attribuer à vos "
+"pourraient apparaître dans ces colonnes. Les Types d'alias, les Types de "
+"remarques et les Rôles d'organisation que vous pouvez attribuer à vos "
 "colonnes mappées peuvent être paramétrées dans la page Administration."
 
 #: resources/import.php:72
