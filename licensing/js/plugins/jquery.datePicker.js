@@ -1127,11 +1127,11 @@
 	// localisable text
 	$.dpText = {
 		TEXT_PREV_YEAR		:	_("Previous year"),
-        TEXT_PREV_MONTH		:	_("Previous month"),
-        TEXT_NEXT_YEAR		:	_("Next year"),
-        TEXT_NEXT_MONTH		:	_("Next month"),
-        TEXT_CLOSE		    :	_("Close"),
-        TEXT_CHOOSE_DATE	:	_("Choose date"),
+		TEXT_PREV_MONTH		:	_("Previous month"),
+		TEXT_NEXT_YEAR		:	_("Next year"),
+		TEXT_NEXT_MONTH		:	_("Next month"),
+		TEXT_CLOSE		:	_("Close"),
+		TEXT_CHOOSE_DATE	:	_("Choose date"),
 		HEADER_FORMAT		:	'mmmm yyyy'
 	};
 	// version
