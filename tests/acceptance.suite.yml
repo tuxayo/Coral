@@ -7,6 +7,8 @@
 class_name: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: http://localhost:8000
+        - WebDriver:
+            url: %BASE_URL%
+            browser: phantomjs
+            window_size: 1280x600
         - \Helper\Acceptance
