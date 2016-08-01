@@ -1,0 +1,5 @@
+# Composer executable + PHPUnit
+bin/
+
+# Composer: installed libs folder
+vendor/
