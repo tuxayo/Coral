@@ -1,0 +1,5 @@
+# Composer: installed libs folder
+vendor/
+
+# Composer: installed binaries: PhantomJS and PHPUnit
+bin/
