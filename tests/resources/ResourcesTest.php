@@ -23,16 +23,22 @@ class ResourcesTest extends TestCase {
 		$driver = new Zumba\Mink\Driver\PhantomJSDriver("http://localhost:8510");
 		self::$session = new \Behat\Mink\Session($driver);
 		self::$session->start();
+		// prevent PhantomJS to keep the last session between two tests runs
+		self::$session->reset();
 		self::$session->visit(self::$baseUrl . "/auth/");
 		$page = self::$session->getPage();
-
+		$page->find("css", "#lang")->selectOption("Français");
+		waitForPageToBeReady($page);
+		// waitElementInPage("#lang", $page);
+		$page->find("css", "#lang")->selectOption("English");
+		waitContentInPage("eRM Authentication", $page);
 		$page->fillField("loginID", $loginId);
 		$page->fillField("password", $password);
 		$page->pressButton("loginbutton");
 
 		// check that we are redirected on the main menu (login success)
-		self::assertNotEquals(NULL, $page->find("named", ["content", "eResource Management"]),
-							  "Login error, we should have been in the main menu if login succeeded");
+		self::assertContent("Resources", $page);
+		self::assertContent("Licensing", $page);
 	}
 
 
@@ -41,26 +47,33 @@ class ResourcesTest extends TestCase {
 		$page = self::$session->getPage();
 
 		// This link is strange, browsers dev tools show that the link itself
-		// doesn have an area. That's why it's not direclty clickable and one
+		// doesn have an area. That's why it's not directly clickable and one
 		// must use click on the inner div. Hopefully "only" the links of the
 		// menus are like this.
 		$page->find("css", "#newLicense div")->click();
-		waitElementInPage("#titleText", $page);
+		waitForPageToBeReady($page);
 
 		$page->fillField("titleText", "test resource");
-		$page->pressButton("progress");  // submit button
-		waitElementInPage(".removeResource", $page);
+		$page->pressButton("submit");
+		waitContentInPage("In Progress", $page);
 
 		self::$session->visit(self::$baseUrl . "/resources/");
+		waitForPageToBeReady($page);
+
 		waitContentInPage("test resource", $page);
-
 		$page->clickLink("test resource");
-		waitElementInPage(".removeResource", $page);
+		waitForPageToBeReady($page);
 
-		$page->find("css", ".removeResource")->click();
-		waitElementInPage(".dataTable", $page); // wait resource list is here
-		file_put_contents("./tests/example_screenshot.jpg", $page->getSession()->getDriver()->getScreenshot());
+		$page->clickLink("remove resource");
+		waitForPageToBeReady($page);
+		waitContentInPage("Date Created", $page); // ensures that the list has loaded by Ajax
+		// So the next check can't do a false positive (classic trap when asserting that
+		// something is not here). Also, be carefull, in this case, the other columns
+		// names are also in the search form so checking for those would be useless.
+
 		$this->assertNotContent("test resource", $page);
+		file_put_contents("./tests/example_screenshot.jpg",
+						  self::$session->getDriver()->getScreenshot());
 	}
 
 
@@ -69,7 +82,7 @@ class ResourcesTest extends TestCase {
 	 */
 	private function assertContent($content, $page) {
 		$result = $page->find("named", ["content", $content]);
-		$this->assertNotEquals(NULL, $result, "$content not found on page");
+		self::assertNotEquals(NULL, $result, "$content not found on page");
 	}
 
 	/**
@@ -88,7 +101,8 @@ class ResourcesTest extends TestCase {
  * @param DocumentElement $page
  */
 function waitElementInPage($cssSelector, $page) {
-	$isFound = $page->getSession()->wait(5000, "$('$cssSelector').length");
+	$isFound = $page->getSession()->
+			 wait(5000, "document.readyState === 'complete' && $('$cssSelector').length");
 	TestCase::assertTrue($isFound, "element $cssSelector not found");
 }
 
@@ -109,6 +123,32 @@ document.evaluate("count(//*[contains(text(),'$content')])",
 JS;
 	$isFound = $page->getSession()->wait(5000, $javaScriptExpression);
 	TestCase::assertTrue($isFound, "content '$content' not found");
+}
+
+
+/**
+ * Wait until all page resources loaded + Ajax + callbacks.
+ * Not 100% bulletproof but avoids most cases where one would have to wait for
+ * a selector or a content to be here before clicking, filling, etc
+ * @param DocumentElement $page
+ */
+function waitForPageToBeReady($page) {
+    // What follows is a multiline JS string in a multiline PHP string.
+    // Backslashes at end of lines are for the multiline JS string
+    // because the multiline PHP string keeps the newlines.
+	$javaScriptExpression = <<<JS
+eval(" \
+setTimeout(function() { window.allEventsFinished = true;}, 0);	\
+/* All events: GUI, onLoad, Ajax and maybe more */ \
+/* var stored in window because eval() isn't in the global scope so 'var myVar' woudn't work */ \
+window.allEventsFinished === true && \
+/* Check that page + resources loaded. Which isn't covered by previous check */ \
+document.readyState === 'complete'; \
+");
+/* TODO comment*/
+JS;
+	$ajaxFinishedBeforeTimeout = $page->getSession()->wait(25000, $javaScriptExpression);
+	TestCase::assertTrue($ajaxFinishedBeforeTimeout, "Timeout: some Ajax request is still running");
 }
 
 
