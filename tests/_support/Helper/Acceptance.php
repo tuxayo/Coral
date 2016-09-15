@@ -43,6 +43,10 @@ JS;
 // Flag is stored in window because this isn't evaluated in the global scope so 'var myVar' woudn't work
 setTimeout(function() { window.allEventsFinished = true;}, 0);
 return window.allEventsFinished === true &&
+
+// no active Ajax request
+$.active == 0 &&
+
 // Check that page + resources loaded. Which isn't covered by previous check.
 // Maybe it's already covered by Codeception.
 document.readyState === 'complete';

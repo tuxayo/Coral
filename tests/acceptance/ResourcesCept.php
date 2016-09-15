@@ -5,6 +5,7 @@ $I->wantTo("ensure that I can create/delete a resource and see it in the list");
 // Resources creation
 $I->amOnPage("/resources/");
 $I->click("New Resource");
+$I->waitForPageToBeReady(); // Ensure that the modal form loaded
 $I->fillField("#titleText", "test resource");
 $I->click(".submit-button");
 // we are redirected to the resource details page
